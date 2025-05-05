@@ -62,6 +62,7 @@
   # Packages
   environment.systemPackages = with pkgs; [
     zathura
+    zoom-us
     lua
     typst
     yazi
