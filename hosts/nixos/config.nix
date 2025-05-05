@@ -38,7 +38,7 @@
   users.users.narayan = {
     isNormalUser = true;
     description = "Narayan";
-    initialPassword = "12345";
+    hashedPasswordFile = "/persist/passwords/narayan";
     extraGroups = ["networkmanager" "wheel"];
     shell = pkgs.nushell;
     openssh.authorizedKeys.keys = ["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIId7MUXGg4c/ez6IoOguGAvkP5HdhHhcCp2fXsSIYUqy narayan@nixos"];
