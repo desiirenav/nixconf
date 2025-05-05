@@ -1,0 +1,18 @@
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
+  programs.nushell = {
+    enable = true;
+    extraConfig = ''
+      $env.config.show_banner = false
+    '';
+  };
+
+  programs.starship = lib.mkForce {
+    enable = true;
+    enableNushellIntegration = true;
+  };
+}
