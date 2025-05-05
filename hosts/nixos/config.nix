@@ -38,8 +38,8 @@
   users.users.narayan = {
     isNormalUser = true;
     description = "Narayan";
-    extraGroups = ["networkmanager" "wheel"];
     initialPassword = "12345";
+    extraGroups = ["networkmanager" "wheel"];
     shell = pkgs.nushell;
     openssh.authorizedKeys.keys = ["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIId7MUXGg4c/ez6IoOguGAvkP5HdhHhcCp2fXsSIYUqy narayan@nixos"];
     packages = with pkgs; [];
