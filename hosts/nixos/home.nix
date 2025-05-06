@@ -10,6 +10,7 @@
     ./../../homeManagerModules/hypr/hyprland.nix
     ./../../homeManagerModules/stylix.nix
     ./../../homeManagerModules/launcher.nix
+    ./../../homeManagerModules/betterfox.nix
     ./../../homeManagerModules/kitty.nix
     ./../../homeManagerModules/shell.nix
     #./../../homeManagerModules/nixcord.nix
