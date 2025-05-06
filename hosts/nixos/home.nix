@@ -34,6 +34,8 @@
       ".gnupg"
       ".ssh"
       ".nixops"
+      ".config/heroic"
+      ".config/nushell"
       ".local/share/keyrings"
       ".local/share/direnv"
       {
