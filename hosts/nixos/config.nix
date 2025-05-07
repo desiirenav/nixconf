@@ -76,6 +76,7 @@
     unzip
     unrar
     inputs.zen-browser.packages."${system}".default
+    inputs.astal.packages.${system}.default
     brightnessctl
     ani-cli
     mangohud

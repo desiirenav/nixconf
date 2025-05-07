@@ -38,10 +38,13 @@
     stylix,
     anyrun,
     nvf,
+    astal,
     ...
-  } @ inputs: {
+  } @ inputs: let
+    system = "x86_64-linux";
+    pkgs = nixpkgs.legacyPackages.${system};
+  in {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-      system = "x86_64-linux";
       specialArgs = {inherit inputs;};
       modules = [
         ./hosts/nixos/config.nix
@@ -49,6 +52,18 @@
         inputs.disko.nixosModules.default
         inputs.impermanence.nixosModules.impermanence
         inputs.home-manager.nixosModules.default
+      ];
+    };
+
+    packages.${system}.default = astal.lib.mkLuaPackage {
+      inherit pkgs;
+      name = "my-shell"; # how to name the executable
+      src = ./../astal; # should contain init.lua
+
+      # add extra glib packages or binaries
+      extraPackages = [
+        astal.packages.${system}.battery
+        pkgs.dart-sass
       ];
     };
   };
