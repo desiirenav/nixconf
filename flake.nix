@@ -59,9 +59,38 @@
       ];
     };
 
-    packages.${system}.astalshell = import ./astal {
-      inherit (inputs) nixpkgs;
-      inherit (inputs) astal;
+    packages.${system}.default = astal.lib.mkLuaPackage {
+      inherit pkgs;
+      name = "astal";
+      src = ./astal;
+
+      extraLuaPackages = ps:
+        with ps; [
+          http
+          dkjson
+        ];
+
+      extraPackages = with astalpkgs; [
+        battery
+        astal4
+        mpris
+        apps
+        astal3
+        astal4
+        battery
+        bluetooth
+        cava
+        greet
+        hyprland
+        io
+        mpris
+        network
+        notifd
+        powerprofiles
+        tray
+        wireplumber
+        pkgs.dart-sass
+      ];
     };
   };
 }
