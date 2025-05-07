@@ -30,8 +30,8 @@ in {
 
       general = {
         gaps_in = 2;
-        gaps_out = 2;
-        border_size = 3;
+        gaps_out = 10;
+        border_size = 2;
         resize_on_border = "no";
         allow_tearing = "no";
         layout = "dwindle";
@@ -40,7 +40,7 @@ in {
       };
 
       decoration = {
-        rounding = 1;
+        rounding = 0;
         active_opacity = "1.0";
         inactive_opacity = "1.0";
         shadow = {
