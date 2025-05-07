@@ -59,16 +59,9 @@
       ];
     };
 
-    packages.${system}.default = astal.lib.mkLuaPackage {
-      inherit pkgs;
-      name = "my-shell"; # how to name the executable
-      src = ./../astal; # should contain init.lua
-
-      # add extra glib packages or binaries
-      extraPackages = [
-        astal.packages.${system}.battery
-        pkgs.dart-sass
-      ];
+    packages.${system}.astalshell = import ./astal {
+      inherit (inputs) nixpkgs;
+      inherit (inputs) astal;
     };
   };
 }
