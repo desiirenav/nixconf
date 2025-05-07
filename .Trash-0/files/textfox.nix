@@ -10,5 +10,6 @@
 
   textfox = {
     enable = true;
+    profile = "default";
   };
 }
