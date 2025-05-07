@@ -26,6 +26,7 @@
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    ags.url = "github:aylur/ags";
     #nixcord.url = "github:kaylorben/nixcord";
     apple-fonts.url = "github:Lyndeno/apple-fonts.nix";
     hyprland.url = "github:hyprwm/Hyprland";

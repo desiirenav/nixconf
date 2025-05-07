@@ -12,7 +12,7 @@
     ./../../homeManagerModules/launcher.nix
     ./../../homeManagerModules/kitty.nix
     ./../../homeManagerModules/shell.nix
-    #./../../homeManagerModules/nixcord.nix
+    ./../../homeManagerModules/ags.nix
   ];
 
   home.username = "narayan";
