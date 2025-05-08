@@ -167,6 +167,7 @@ in {
       ];
 
       exec-once = [
+        "bash ./../scripts/start.sh"
       ];
     };
   };
