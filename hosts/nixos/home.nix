@@ -12,6 +12,7 @@
     ./../../homeManagerModules/launcher.nix
     ./../../homeManagerModules/kitty.nix
     ./../../homeManagerModules/shell.nix
+    ./../../homeManagerModules/gaming.nix
   ];
 
   home.username = "narayan";

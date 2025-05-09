@@ -79,18 +79,8 @@
     inputs.astal.packages.${system}.default
     brightnessctl
     ani-cli
-    mangohud
     qbittorrent
   ];
-
-  programs.steam = {
-    enable = true;
-    remotePlay.openFirewall = true;
-    dedicatedServer.openFirewall = true;
-    localNetworkGameTransfers.openFirewall = true;
-  };
-
-  programs.gamemode.enable = true;
 
   home-manager = {
     extraSpecialArgs = {inherit inputs;};
