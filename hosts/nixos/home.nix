@@ -38,10 +38,6 @@
       ".config/nushell"
       ".local/share/keyrings"
       ".local/share/direnv"
-      {
-        directory = ".local/share/Steam";
-        method = "symlink";
-      }
     ];
     files = [
       ".screenrc"

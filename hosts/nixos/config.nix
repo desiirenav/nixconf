@@ -11,6 +11,7 @@
     ./../../nixosModules/stylix.nix
     ./../../nixosModules/nvf.nix
     ./../../nixosModules/imper.nix
+    ./../../nixosModules/gaming.nix
   ];
 
   # Bootloader.
@@ -71,7 +72,6 @@
     typst
     yazi
     fastfetch
-    heroic
     librewolf
     unzip
     unrar
