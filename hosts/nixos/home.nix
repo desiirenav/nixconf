@@ -12,7 +12,6 @@
     ./../../homeManagerModules/launcher.nix
     ./../../homeManagerModules/kitty.nix
     ./../../homeManagerModules/shell.nix
-    ./../../homeManagerModules/gaming.nix
   ];
 
   home.username = "narayan";
@@ -38,6 +37,7 @@
       ".config/nushell"
       ".local/share/keyrings"
       ".local/share/direnv"
+      ".local/share/Steam"
     ];
     files = [
       ".screenrc"
