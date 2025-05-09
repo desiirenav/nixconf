@@ -33,9 +33,11 @@
   i18n.defaultLocale = "en_CA.UTF-8";
 
   # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "us";
-    variant = "";
+  services = {
+    xserver.xkb = {
+      layout = "us";
+      variant = "";
+    };
   };
 
   # User
@@ -75,6 +77,10 @@
     librewolf
     unzip
     unrar
+    (discord.override {
+      # withOpenASAR = true; # can do this here too
+      withVencord = true;
+    })
     inputs.zen-browser.packages."${system}".default
     brightnessctl
     ani-cli
