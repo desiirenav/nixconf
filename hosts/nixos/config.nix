@@ -70,17 +70,12 @@
     zathura
     zoom-us
     nitch
-    lua
     typst
     yazi
     fastfetch
-    librewolf
     unzip
     unrar
-    (discord.override {
-      # withOpenASAR = true; # can do this here too
-      withVencord = true;
-    })
+    librewolf
     inputs.zen-browser.packages."${system}".default
     brightnessctl
     ani-cli

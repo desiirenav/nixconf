@@ -12,6 +12,10 @@
     ./../../homeManagerModules/launcher.nix
     ./../../homeManagerModules/kitty.nix
     ./../../homeManagerModules/shell.nix
+<<<<<<< HEAD
+=======
+    ./../../homeManagerModules/nixcord.nix
+>>>>>>> 8ffc0f2 (nixcord with system24)
   ];
 
   home.username = "narayan";
@@ -35,8 +39,6 @@
       ".nixops"
       ".config/heroic"
       ".config/nushell"
-      ".config/discord"
-      ".config/Vencord"
       ".local/share/keyrings"
       ".local/share/direnv"
       ".local/share/Steam"
