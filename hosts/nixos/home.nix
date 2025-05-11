@@ -35,6 +35,8 @@
       ".nixops"
       ".config/heroic"
       ".config/nushell"
+      ".config/discord"
+      ".config/Vencord"
       ".local/share/keyrings"
       ".local/share/direnv"
       ".local/share/Steam"

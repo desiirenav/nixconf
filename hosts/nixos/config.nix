@@ -76,6 +76,10 @@
     unzip
     unrar
     librewolf
+    (discord.override {
+      # withOpenASAR = true; # can do this here too
+      withVencord = true;
+    })
     inputs.zen-browser.packages."${system}".default
     brightnessctl
     ani-cli
