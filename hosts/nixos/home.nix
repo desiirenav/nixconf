@@ -12,10 +12,6 @@
     ./../../homeManagerModules/launcher.nix
     ./../../homeManagerModules/kitty.nix
     ./../../homeManagerModules/shell.nix
-<<<<<<< HEAD
-=======
-    ./../../homeManagerModules/nixcord.nix
->>>>>>> 8ffc0f2 (nixcord with system24)
   ];
 
   home.username = "narayan";
