@@ -11,7 +11,7 @@
   stylix = {
     autoEnable = true;
     enable = true;
-    image = ./wave.jpg;
+    image = ./statue.png;
     cursor = {
       package = pkgs.capitaine-cursors-themed;
       name = "Capitaine Cursors (Gruvbox)";

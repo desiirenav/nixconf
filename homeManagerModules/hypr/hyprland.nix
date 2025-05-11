@@ -5,7 +5,7 @@
   inputs,
   ...
 }: let
-  wallpaper = ./../wave.jpg;
+  wallpaper = ./../statue.png;
   mainMod = "SUPER";
   workspaceKeys = lib.range 1 9;
   workspaceSwitch = (map (num: "${mainMod}, ${toString num}, workspace, ${toString num}") workspaceKeys) ++ ["${mainMod}, 0, workspace, 10"];
@@ -29,13 +29,13 @@ in {
       ];
 
       general = {
-        gaps_in = 5;
-        gaps_out = 2;
+        gaps_in = 0;
+        gaps_out = 0;
         border_size = 3;
         resize_on_border = "no";
         allow_tearing = "no";
         layout = "dwindle";
-        "col.active_border" = lib.mkForce "rgba(${config.stylix.base16Scheme.base0B}ff) rgba(${config.stylix.base16Scheme.base09}ff) 45deg";
+        "col.active_border" = lib.mkForce "rgba(${config.stylix.base16Scheme.base0E}ff) rgba(${config.stylix.base16Scheme.base09}ff) 45deg";
         "col.inactive_border" = lib.mkForce "rgba(${config.stylix.base16Scheme.base00}ff)";
       };
 
