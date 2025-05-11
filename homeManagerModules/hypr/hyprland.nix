@@ -125,7 +125,7 @@ in {
           "$mod, RETURN, exec, kitty"
           "$mod, Q, killactive"
           "$mod, M, exit"
-          "$mod, X, exec, ${pkgs.anyrun}/bin/anyrun"
+          "$mod, X, exec, rofi -show drun"
           "$mod, E, exec, yazi"
           "$mod, V, togglefloating"
           "$mod, P, pseudo"

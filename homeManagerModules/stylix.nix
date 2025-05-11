@@ -6,6 +6,8 @@
   stylix = {
     autoEnable = true;
     enable = true;
-    targets.vencord.enable = true;
+    targets = {
+      vencord.enable = true;
+    };
   };
 }

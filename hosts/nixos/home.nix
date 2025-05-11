@@ -9,9 +9,9 @@
     inputs.impermanence.nixosModules.home-manager.impermanence
     ./../../homeManagerModules/hypr/hyprland.nix
     ./../../homeManagerModules/stylix.nix
-    ./../../homeManagerModules/launcher.nix
     ./../../homeManagerModules/kitty.nix
     ./../../homeManagerModules/shell.nix
+    ./../../homeManagerModules/rofi.nix
   ];
 
   home.username = "narayan";
