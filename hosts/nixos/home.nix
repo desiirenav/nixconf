@@ -12,7 +12,6 @@
     ./../../homeManagerModules/launcher.nix
     ./../../homeManagerModules/kitty.nix
     ./../../homeManagerModules/shell.nix
-    ./../../homeManagerModules/textfox.nix
   ];
 
   home.username = "narayan";
