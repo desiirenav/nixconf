@@ -8,6 +8,7 @@
     enable = true;
     targets = {
       vencord.enable = true;
+      wezterm.enable = true;
     };
   };
 }

@@ -3,7 +3,7 @@
   pkgs,
   ...
 }: {
-  imports = [inputs.ghostty.packages.${pkgs.system}.default];
+  imports = [inputs.ghostty.homeModules.default];
 
   programs.ghostty.enable = true;
 }
