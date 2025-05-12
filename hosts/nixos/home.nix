@@ -12,6 +12,7 @@
     ./../../homeManagerModules/kitty.nix
     ./../../homeManagerModules/shell.nix
     ./../../homeManagerModules/rofi.nix
+    ./../../homeManagerModules/ghostty.nix
   ];
 
   home.username = "narayan";

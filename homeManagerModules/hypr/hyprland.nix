@@ -31,11 +31,11 @@ in {
       general = {
         gaps_in = 0;
         gaps_out = 0;
-        border_size = 3;
+        border_size = 2;
         resize_on_border = "no";
         allow_tearing = "no";
         layout = "dwindle";
-        "col.active_border" = lib.mkForce "rgba(${config.stylix.base16Scheme.base0E}ff) rgba(${config.stylix.base16Scheme.base09}ff) 45deg";
+        "col.active_border" = lib.mkForce "rgba(${config.stylix.base16Scheme.base0B}ff) rgba(${config.stylix.base16Scheme.base09}ff) 45deg";
         "col.inactive_border" = lib.mkForce "rgba(${config.stylix.base16Scheme.base00}ff)";
       };
 
