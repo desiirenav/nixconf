@@ -12,6 +12,7 @@
     ./../../nixosModules/nvf.nix
     ./../../nixosModules/imper.nix
     ./../../nixosModules/gaming.nix
+    ./../../nixosModules/tmux.nix
   ];
 
   # Bootloader.
@@ -80,6 +81,7 @@
     brightnessctl
     ani-cli
     qbittorrent
+    btop
   ];
 
   home-manager = {

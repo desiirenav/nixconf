@@ -31,7 +31,7 @@ in {
       general = {
         gaps_in = 0;
         gaps_out = 0;
-        border_size = 1;
+        border_size = 3;
         resize_on_border = "no";
         allow_tearing = "no";
         layout = "dwindle";
