@@ -28,7 +28,7 @@
     };
     apple-fonts.url = "github:Lyndeno/apple-fonts.nix";
     hyprland.url = "github:hyprwm/Hyprland";
-    nixcord.url = "github:kaylorben/nixcord";
+    #nixcord.url = "github:kaylorben/nixcord";
     nvf.url = "github:notashelf/nvf";
   };
 
