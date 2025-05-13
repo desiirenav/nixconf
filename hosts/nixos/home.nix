@@ -12,7 +12,7 @@
     ./../../homeManagerModules/kitty.nix
     ./../../homeManagerModules/shell.nix
     ./../../homeManagerModules/rofi.nix
-    #./../../homeManagerModules/ghostty.nix
+    ./../../homeManagerModules/nixcord.nix
   ];
 
   home.username = "narayan";
@@ -36,8 +36,8 @@
       ".nixops"
       ".config/heroic"
       ".config/nushell"
-      ".config/discord"
-      ".config/Vencord"
+      #".config/discord"
+      #".config/Vencord"
       ".local/share/keyrings"
       ".local/share/direnv"
       ".local/share/Steam"
