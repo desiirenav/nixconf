@@ -51,5 +51,10 @@
         inputs.home-manager.nixosModules.default
       ];
     };
+    packages."x86_64-linux".astalshell = import ./astal {
+      inherit (inputs) nixpkgs;
+      inherit (inputs) astal;
+      system = "x86_64-linux";
+    };
   };
 }

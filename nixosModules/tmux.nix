@@ -8,11 +8,11 @@
     enable = true;
     clock24 = true;
     extraConfig = ''
-      set-option -g prefix C-b
-      bind-key C-b send-prefix
+      set-option -g prefix C-a
+      bind-key C-a send-prefix
       setw -g mouse on
 
-      set-option -g default-shell /etc/profiles/per-user/study/bin/nushell
+      set-option -g default-shell /home/narayan/.nix-profile/bin/nu
 
       set -g base-index 1
 
