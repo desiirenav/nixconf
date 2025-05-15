@@ -13,6 +13,7 @@
     ./../../nixosModules/imper.nix
     ./../../nixosModules/gaming.nix
     ./../../nixosModules/tmux.nix
+    ./../../nixosModules/xremap.nix
   ];
 
   # Bootloader.

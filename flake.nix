@@ -26,6 +26,7 @@
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    xremap-flake.url = "github:xremap/nix-flake";
     apple-fonts.url = "github:Lyndeno/apple-fonts.nix";
     hyprland.url = "github:hyprwm/Hyprland";
     nixcord.url = "github:kaylorben/nixcord";
@@ -50,11 +51,6 @@
         inputs.impermanence.nixosModules.impermanence
         inputs.home-manager.nixosModules.default
       ];
-    };
-    packages."x86_64-linux".astalshell = import ./astal {
-      inherit (inputs) nixpkgs;
-      inherit (inputs) astal;
-      system = "x86_64-linux";
     };
   };
 }

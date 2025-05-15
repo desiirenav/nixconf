@@ -19,7 +19,7 @@
           enableFormat = true;
           enableTreesitter = true;
           nix.enable = true;
-          lua = {
+          ts = {
             enable = true;
             treesitter.enable = true;
           };
