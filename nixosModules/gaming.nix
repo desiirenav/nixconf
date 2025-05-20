@@ -5,7 +5,6 @@
   ...
 }: {
   environment.systemPackages = with pkgs; [
-    heroic
     mangohud
     wineWowPackages.stable
   ];

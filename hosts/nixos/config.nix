@@ -69,8 +69,6 @@
   # Packages
   environment.systemPackages = with pkgs; [
     zathura
-    zoom-us
-    nitch
     typst
     yazi
     fastfetch
@@ -82,8 +80,6 @@
     brightnessctl
     ani-cli
     qbittorrent
-    btop
-    vlc
   ];
 
   home-manager = {

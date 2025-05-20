@@ -14,10 +14,6 @@
     impermanence = {
       url = "github:nix-community/impermanence";
     };
-    anyrun = {
-      url = "github:anyrun-org/anyrun";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     stylix = {
       url = "github:danth/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -35,7 +31,6 @@
     };
     apple-fonts.url = "github:Lyndeno/apple-fonts.nix";
     hyprland.url = "github:hyprwm/Hyprland";
-    nixcord.url = "github:kaylorben/nixcord";
     nvf.url = "github:notashelf/nvf";
   };
 
@@ -43,7 +38,6 @@
     self,
     nixpkgs,
     stylix,
-    anyrun,
     nvf,
     ...
   } @ inputs: {
