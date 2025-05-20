@@ -30,6 +30,9 @@
       url = "github:sodiboo/niri-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    ghostty = {
+      url = "github:ghostty-org/ghostty";
+    };
     apple-fonts.url = "github:Lyndeno/apple-fonts.nix";
     hyprland.url = "github:hyprwm/Hyprland";
     nixcord.url = "github:kaylorben/nixcord";
