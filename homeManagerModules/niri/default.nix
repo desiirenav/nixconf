@@ -8,6 +8,7 @@
   imports = [
     inputs.niri.homeModules.niri
     ./binds.nix
+    ./rules.nix
   ];
 
   home.packages = with pkgs; [
