@@ -74,10 +74,8 @@
     fastfetch
     unzip
     unrar
-    vesktop
     librewolf
     inputs.zen-browser.packages."${system}".default
-    brightnessctl
     ani-cli
     qbittorrent
   ];

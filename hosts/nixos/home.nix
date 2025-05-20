@@ -33,6 +33,7 @@
       "Videos"
       "Games"
       ".ssh"
+      ".zen"
       ".config/nushell"
       ".config/discord"
       ".config/Vencord"

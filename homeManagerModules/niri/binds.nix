@@ -10,7 +10,8 @@
       binds = with config.lib.niri.actions; {
         "XF86AudioRaiseVolume".action = spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+";
         "XF86AudioLowerVolume".action = spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-";
-
+        "XF86MonBrightnessUp".action = spawn "sh" "-c" "brightnessctl set 10%+";
+        "XF86MonBrightnessDown".action = spawn "sh" "-c" "brightnessctl set 10%-";
         "Print".action.screenshot-screen = {write-to-disk = true;};
         "Mod+X".action = spawn "fuzzel";
         "Mod+Return".action = spawn "ghostty";

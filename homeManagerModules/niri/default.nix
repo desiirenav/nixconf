@@ -7,6 +7,7 @@
 }: {
   imports = [
     inputs.niri.homeModules.niri
+    inputs.niri.homeModules.stylix
     ./binds.nix
     ./rules.nix
   ];
@@ -14,18 +15,18 @@
   home.packages = with pkgs; [
     xwayland-satellite
     fuzzel
+    brightnessctl
   ];
   programs.niri = {
     enable = true;
     settings = {
       environment = {
-        DISPLAY = ":12";
+        DISPLAY = ":0";
       };
       spawn-at-startup = [
         {
           command = [
-            "${lib.getExe pkgs.xwayland-satellite}"
-            config.programs.niri.settings.environment.DISPLAY
+            "xwayland-satellite"
           ];
         }
       ];
