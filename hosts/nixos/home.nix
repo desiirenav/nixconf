@@ -1,4 +1,4 @@
-{
+{{
   config,
   pkgs,
   inputs,
@@ -8,6 +8,7 @@
   imports = [
     inputs.impermanence.nixosModules.home-manager.impermanence
     ./../../homeManagerModules/hypr/hyprland.nix
+    ./../../homeManagerModules/niri.nix
     ./../../homeManagerModules/stylix.nix
     ./../../homeManagerModules/kitty.nix
     ./../../homeManagerModules/shell.nix
@@ -38,6 +39,7 @@
       ".config/nushell"
       ".config/discord"
       ".config/Vencord"
+      ".config/vesktop"
       ".local/share/keyrings"
       ".local/share/direnv"
       ".local/share/Steam"

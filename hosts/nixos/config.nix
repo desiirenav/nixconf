@@ -13,7 +13,6 @@
     ./../../nixosModules/imper.nix
     ./../../nixosModules/gaming.nix
     ./../../nixosModules/tmux.nix
-    ./../../nixosModules/xremap.nix
   ];
 
   # Bootloader.
@@ -77,12 +76,14 @@
     fastfetch
     unzip
     unrar
+    vesktop
     librewolf
     inputs.zen-browser.packages."${system}".default
     brightnessctl
     ani-cli
     qbittorrent
     btop
+    vlc
   ];
 
   home-manager = {
