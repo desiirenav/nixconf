@@ -12,6 +12,7 @@
         DISPLAY = ":0";
         NIXOS_OZONE_WL = "1";
       };
+      prefer-no-csd = true;
       layout = {
         focus-ring.enable = false;
         border = {
@@ -21,13 +22,8 @@
         shadow = {
           enable = true;
         };
-        gaps = 6;
-        struts = {
-          left = 0;
-          right = 0;
-          top = 0;
-          bottom = 0;
-        };
+        gaps = 8;
+      };
       spawn-at-startup = [
         {
           command = [
