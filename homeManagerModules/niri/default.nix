@@ -16,6 +16,7 @@
     xwayland-satellite
     fuzzel
     brightnessctl
+    waybar
   ];
   programs.niri = {
     enable = true;
@@ -28,6 +29,7 @@
         {
           command = [
             "xwayland-satellite"
+            "waybar"
           ];
         }
       ];

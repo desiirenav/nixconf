@@ -11,7 +11,6 @@
     ./../../homeManagerModules/stylix.nix
     ./../../homeManagerModules/shell.nix
     ./../../homeManagerModules/ghostty.nix
-    ./../../homeManagerModules/waybar.nix
   ];
 
   home.username = "narayan";
@@ -32,8 +31,8 @@
       "Games"
       ".ssh"
       ".zen"
-      ".config/nushell"
       ".config/waybar"
+      ".config/nushell"
       ".config/discord"
       ".config/Vencord"
       ".config/vesktop"
