@@ -33,6 +33,7 @@
       ".ssh"
       ".zen"
       ".config/nushell"
+      ".config/quickshell"
       ".config/discord"
       ".config/Vencord"
       ".config/vesktop"
