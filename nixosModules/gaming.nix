@@ -7,7 +7,6 @@
   environment.systemPackages = with pkgs; [
     mangohud
     wineWowPackages.stable
-    vesktop
   ];
 
   environment.sessionVariables = {
