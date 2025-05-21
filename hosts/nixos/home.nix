@@ -31,7 +31,6 @@
       "Games"
       ".ssh"
       ".zen"
-      ".config/waybar"
       ".config/nushell"
       ".config/discord"
       ".config/Vencord"

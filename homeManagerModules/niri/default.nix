@@ -16,8 +16,14 @@
     xwayland-satellite
     fuzzel
     brightnessctl
-    waybar
+    dunst
+    noto-fonts-cjk-sans
+    font-awesome
+    noto-fonts
   ];
+
+  programs.waybar.enable = true;
+
   programs.niri = {
     enable = true;
     settings = {
@@ -29,6 +35,10 @@
         {
           command = [
             "xwayland-satellite"
+          ];
+        }
+        {
+          command = [
             "waybar"
           ];
         }
