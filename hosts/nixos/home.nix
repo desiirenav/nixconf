@@ -11,6 +11,7 @@
     ./../../homeManagerModules/stylix.nix
     ./../../homeManagerModules/shell.nix
     ./../../homeManagerModules/ghostty.nix
+    ./../../homeManagerModules/quickshell/default.nix
   ];
 
   home.username = "narayan";

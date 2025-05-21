@@ -17,9 +17,6 @@
     fuzzel
     brightnessctl
     dunst
-    noto-fonts-cjk-sans
-    font-awesome
-    noto-fonts
   ];
 
   programs.waybar.enable = true;
