@@ -40,6 +40,14 @@
       variant = "";
     };
   };
+  security.rtkit.enable = true;
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+    jack.enable = true;
+  };
 
   # User
   users.users.narayan = {
@@ -58,14 +66,11 @@
   # Flakes
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
-  # Hyprland
-  programs.hyprland.enable = true;
-  programs.hyprland.package = inputs.hyprland.packages."${pkgs.system}".hyprland;
-
   # Bluetooth
   hardware.bluetooth.enable = true;
 
-  environment.sessionVariables.NIXOS_OZONE_WL = "1";
+  environment.variables.NIXOS_OZONE_WL = "1";
+
   # Packages
   environment.systemPackages = with pkgs; [
     zathura

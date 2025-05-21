@@ -5,20 +5,11 @@
   inputs,
   ...
 }: let
-  wallpaper = ./../statue.png;
   mainMod = "SUPER";
   workspaceKeys = lib.range 1 9;
   workspaceSwitch = (map (num: "${mainMod}, ${toString num}, workspace, ${toString num}") workspaceKeys) ++ ["${mainMod}, 0, workspace, 10"];
   moveToWorkspace = (map (num: "${mainMod} SHIFT, ${toString num}, movetoworkspace, ${toString num}") workspaceKeys) ++ ["${mainMod} SHIFT, 0, movetoworkspace, 10"];
 in {
-  services.hyprpaper = {
-    enable = true;
-    settings = {
-      preload = ["${wallpaper}"];
-      wallpaper = [",${wallpaper}"];
-    };
-  };
-
   wayland.windowManager.hyprland = {
     enable = true;
     settings = {

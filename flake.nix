@@ -30,7 +30,6 @@
       url = "github:ghostty-org/ghostty";
     };
     apple-fonts.url = "github:Lyndeno/apple-fonts.nix";
-    hyprland.url = "github:hyprwm/Hyprland";
     nvf.url = "github:notashelf/nvf";
   };
 

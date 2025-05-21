@@ -7,13 +7,11 @@
 }: {
   imports = [
     inputs.impermanence.nixosModules.home-manager.impermanence
-    ./../../homeManagerModules/hypr/hyprland.nix
     ./../../homeManagerModules/niri/default.nix
     ./../../homeManagerModules/stylix.nix
-    ./../../homeManagerModules/kitty.nix
     ./../../homeManagerModules/shell.nix
-    ./../../homeManagerModules/rofi.nix
     ./../../homeManagerModules/ghostty.nix
+    ./../../homeManagerModules/waybar.nix
   ];
 
   home.username = "narayan";

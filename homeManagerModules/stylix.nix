@@ -7,6 +7,7 @@
     autoEnable = true;
     enable = true;
     targets = {
+      waybar.enable = false;
     };
   };
 }
