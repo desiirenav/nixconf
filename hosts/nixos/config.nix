@@ -83,6 +83,7 @@
     inputs.zen-browser.packages."${system}".default
     ani-cli
     qbittorrent
+    sf-mono-liga-bin
   ];
 
   home-manager = {
