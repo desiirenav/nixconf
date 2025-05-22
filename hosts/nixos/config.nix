@@ -12,6 +12,7 @@
     ./../../nixosModules/nvf.nix
     ./../../nixosModules/imper.nix
     ./../../nixosModules/gaming.nix
+    ./../../overlays/liga.nix
   ];
 
   # Bootloader.

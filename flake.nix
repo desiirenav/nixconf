@@ -32,7 +32,10 @@
     ghostty = {
       url = "github:ghostty-org/ghostty";
     };
-    apple-fonts.url = "github:Lyndeno/apple-fonts.nix";
+    sf-mono-liga-src = {
+      url = "github:shaunsingh/SFMono-Nerd-Font-Ligaturized";
+      flake = false;
+    };
     nvf.url = "github:notashelf/nvf";
     quickshell = {
       url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
