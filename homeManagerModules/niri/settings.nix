@@ -30,6 +30,18 @@
             "xwayland-satellite"
           ];
         }
+        {
+          command = [
+            "${pkgs.swww}/bin/swww-daemon"
+          ];
+        }
+        {
+          command = [
+            "${pkgs.swww}/bin/swww"
+            "img"
+            "./../bird.png"
+          ];
+        }
       ];
     };
   };

@@ -16,7 +16,7 @@
   home.packages = with pkgs; [
     xwayland-satellite
     brightnessctl
-    dunst
+    swww
     adwaita-icon-theme
   ];
 }
