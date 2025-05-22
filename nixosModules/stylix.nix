@@ -14,9 +14,9 @@
     image = ./bird.png;
 
     cursor = {
-      package = pkgs.capitaine-cursors-themed;
-      name = "Capitaine Cursors (Gruvbox)";
-      size = 24;
+      package = pkgs.rose-pine-cursor;
+      name = "BreezeX-RosePineDawn-Linux";
+      size = 20;
     };
 
     base16Scheme = {

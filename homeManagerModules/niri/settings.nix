@@ -4,7 +4,9 @@
   config,
   lib,
   ...
-}: {
+}: let
+  wallpaper = "${./bird.png}";
+in {
   programs.niri = {
     enable = true;
     settings = {
@@ -32,14 +34,11 @@
         }
         {
           command = [
-            "${pkgs.swww}/bin/swww-daemon"
-          ];
-        }
-        {
-          command = [
-            "${pkgs.swww}/bin/swww"
-            "img"
-            "./../bird.png"
+            "swaybg"
+            "-m"
+            "fill"
+            "i"
+            wallpaper
           ];
         }
       ];
