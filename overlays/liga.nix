@@ -1,5 +1,4 @@
 {
-  sf-mono-liga-src,
   config,
   inputs,
   pkgs,
