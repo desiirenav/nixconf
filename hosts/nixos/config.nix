@@ -79,12 +79,11 @@
     fastfetch
     unzip
     unrar
-    librewolf
     pfetch
     nitch
     ani-cli
     qbittorrent
-    sf-mono-liga-bin
+    librewolf
   ];
 
   home-manager = {

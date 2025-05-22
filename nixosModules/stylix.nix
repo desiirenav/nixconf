@@ -11,7 +11,7 @@
   stylix = {
     autoEnable = true;
     enable = true;
-    image = ./statue.png;
+    image = ./bird.png;
 
     cursor = {
       package = pkgs.capitaine-cursors-themed;
