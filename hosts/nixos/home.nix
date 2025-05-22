@@ -13,6 +13,7 @@
     ./../../homeManagerModules/shell.nix
     ./../../homeManagerModules/ghostty.nix
     ./../../homeManagerModules/nixcord.nix
+    ./../../homeManagerModules/browser.nix
     ./../../homeManagerModules/quickshell/default.nix
   ];
 

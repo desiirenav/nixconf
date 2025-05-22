@@ -17,5 +17,6 @@
     xwayland-satellite
     brightnessctl
     dunst
+    adwaita-icon-theme
   ];
 }

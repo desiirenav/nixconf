@@ -80,7 +80,8 @@
     unzip
     unrar
     librewolf
-    inputs.zen-browser.packages."${system}".default
+    pfetch
+    nitch
     ani-cli
     qbittorrent
     sf-mono-liga-bin
