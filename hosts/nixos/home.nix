@@ -12,6 +12,7 @@
     ./../../homeManagerModules/fuzzel.nix
     ./../../homeManagerModules/shell.nix
     ./../../homeManagerModules/ghostty.nix
+    ./../../homeManagerModules/nixcord.nix
     ./../../homeManagerModules/quickshell/default.nix
   ];
 
