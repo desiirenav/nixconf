@@ -8,7 +8,6 @@
 
   xdg.configFile."ghostty/config".text = ''
     theme = rose-pine-dawn
-    font-family = SF Mono Nerd Font
     font-size = 12
     font-thicken = true
   '';

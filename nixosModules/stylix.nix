@@ -37,20 +37,5 @@
       base0E = "ea9d34";
       base0F = "cecacd";
     };
-
-    fonts = {
-      serif = {
-        package = inputs.apple-fonts.packages.${pkgs.system}.sf-pro-nerd;
-        name = "SFProDisplay Nerd Font";
-      };
-      sansSerif = {
-        package = inputs.apple-fonts.packages.${pkgs.system}.sf-pro-nerd;
-        name = "SFProDisplay Nerd Font";
-      };
-      monospace = {
-        package = inputs.apple-fonts.packages.${pkgs.system}.sf-mono-nerd;
-        name = "SF Mono Nerd Font";
-      };
-    };
   };
 }
