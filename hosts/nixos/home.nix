@@ -34,6 +34,8 @@
       "Games"
       ".ssh"
       ".zen"
+      ".config/discord"
+      ".config/Vencord"
       ".config/nushell"
       ".config/quickshell"
       ".local/share/keyrings"

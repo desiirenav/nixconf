@@ -26,6 +26,9 @@
       url = "github:sodiboo/niri-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nixcord = {
+      url = "github:kaylorben/nixcord";
+    };
     ghostty = {
       url = "github:ghostty-org/ghostty";
     };

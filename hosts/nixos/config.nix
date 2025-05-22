@@ -12,7 +12,6 @@
     ./../../nixosModules/nvf.nix
     ./../../nixosModules/imper.nix
     ./../../nixosModules/gaming.nix
-    ./../../nixosModules/tmux.nix
   ];
 
   # Bootloader.
