@@ -5,7 +5,7 @@
   lib,
   ...
 }: let
-  wallpaper = "${./bird.png}";
+  wallpaper = "${./../bird.png}";
 in {
   programs.niri = {
     enable = true;
@@ -28,18 +28,10 @@ in {
       };
       spawn-at-startup = [
         {
-          command = [
-            "xwayland-satellite"
-          ];
+          command = ["xwayland-satellite"];
         }
         {
-          command = [
-            "swaybg"
-            "-m"
-            "fill"
-            "i"
-            wallpaper
-          ];
+          command = ["swaybg" "-m" "fill" "-i" wallpaper];
         }
       ];
     };
