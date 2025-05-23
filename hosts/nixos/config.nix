@@ -84,6 +84,7 @@
     ani-cli
     qbittorrent
     librewolf
+    vlc
   ];
 
   home-manager = {
