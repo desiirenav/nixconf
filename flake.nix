@@ -38,10 +38,6 @@
       flake = false;
     };
     nvf.url = "github:notashelf/nvf";
-    quickshell = {
-      url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs = {
