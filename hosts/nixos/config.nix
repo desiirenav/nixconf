@@ -84,6 +84,7 @@
     ani-cli
     qbittorrent
     librewolf
+    lua
     vlc
   ];
 
