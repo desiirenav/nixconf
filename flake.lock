@@ -26,6 +26,26 @@
         "type": "github"
       }
     },
+    "astal": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1747093850,
+        "narHash": "sha256-SaHAtzUyfm4urAcUEZlBFn7dWhoDqA6kaeFZ11CCTf8=",
+        "owner": "aylur",
+        "repo": "astal",
+        "rev": "4820a3e37cc8eb81db6ed991528fb23472a8e4de",
+        "type": "github"
+      },
+      "original": {
+        "owner": "aylur",
+        "repo": "astal",
+        "type": "github"
+      }
+    },
     "base16": {
       "inputs": {
         "fromYaml": "fromYaml"
@@ -757,29 +777,10 @@
         "url": "https://devimages-cdn.apple.com/design/resources/download/NY.dmg"
       }
     },
-    "quickshell": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1747638064,
-        "narHash": "sha256-juEWrS6mOnlU5hva6sewhlRxTFc3cV8bV2Tt3xyTlcg=",
-        "ref": "refs/heads/master",
-        "rev": "02e06ea5774eeb3af982a483e5c7e949d276eafc",
-        "revCount": 535,
-        "type": "git",
-        "url": "https://git.outfoxxed.me/outfoxxed/quickshell"
-      },
-      "original": {
-        "type": "git",
-        "url": "https://git.outfoxxed.me/outfoxxed/quickshell"
-      }
-    },
     "root": {
       "inputs": {
         "apple-fonts": "apple-fonts",
+        "astal": "astal",
         "disko": "disko",
         "ghostty": "ghostty",
         "home-manager": "home-manager",
@@ -788,7 +789,6 @@
         "nixcord": "nixcord",
         "nixpkgs": "nixpkgs_3",
         "nvf": "nvf",
-        "quickshell": "quickshell",
         "sf-mono-liga-src": "sf-mono-liga-src",
         "stylix": "stylix",
         "zen-browser": "zen-browser"
