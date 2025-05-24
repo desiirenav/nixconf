@@ -7,3 +7,5 @@ App:start {
         Bar(1) -- instantiate for each monitor
     end,
 }
+
+
