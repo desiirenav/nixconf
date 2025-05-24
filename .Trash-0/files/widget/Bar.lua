@@ -34,24 +34,6 @@ local function SysTray()
 	})
 end
 
-local function FocusedClient()
-	local hypr = Hyprland.get_default()
-	local focused = bind(hypr, "focused-client")
-
-	return Widget.Box({
-		class_name = "Focused",
-		visible = focused,
-		focused:as(
-			function(client)
-				return client
-					and Widget.Label({
-						label = bind(client, "title"):as(tostring),
-					})
-			end
-		),
-	})
-end
-
 local function Wifi()
 	local network = Network.get_default()
 	local wifi = bind(network, "wifi")
@@ -131,34 +113,6 @@ local function Media()
 	})
 end
 
-local function Workspaces()
-	local hypr = Hyprland.get_default()
-
-	return Widget.Box({
-		class_name = "Workspaces",
-		bind(hypr, "workspaces"):as(function(wss)
-			table.sort(wss, function(a, b) return a.id < b.id end)
-
-			return map(wss, function(ws)
-				if not (ws.id >= -99 and ws.id <= -2) then -- filter out special workspaces
-					return Widget.Button({
-						class_name = bind(hypr, "focused-workspace"):as(
-							function(fw) return fw == ws and "focused" or "" end
-						),
-						on_clicked = function() ws:focus() end,
-						label = bind(ws, "id"):as(
-							function(v)
-								return type(v) == "number"
-										and string.format("%.0f", v)
-									or v
-							end
-						),
-					})
-				end
-			end)
-		end),
-	})
-end
 
 local function Time(format)
 	local time = Variable(""):poll(
@@ -184,7 +138,6 @@ return function(gdkmonitor)
 		Widget.CenterBox({
 			Widget.Box({
 				halign = "START",
-				Workspaces(),
 				FocusedClient(),
 			}),
 			Widget.Box({

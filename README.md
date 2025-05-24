@@ -11,3 +11,7 @@
 
 # Windows Manager
 https://github.com/YaLTeR/niri
+
+# Astal bar inspiration
+- https://github.com/linuxmobile/kaku
+

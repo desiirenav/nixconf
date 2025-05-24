@@ -73,11 +73,34 @@
       inherit pkgs;
       name = "astal-bar"; # Executable name
       src = ./astal-bar; # Directory with your init.lua
-
-      extraPackages = [
-        astal.packages.${system}.battery
-        pkgs.dart-sass
-      ];
+      extraPackages = with astal.packages.${system};
+        [
+          battery
+          astal3
+          io
+          apps
+          bluetooth
+          mpris
+          network
+          notifd
+          powerprofiles
+          tray
+          hyprland
+          wireplumber
+        ]
+        ++ (with pkgs; [
+          dart-sass
+          inotify-tools
+          brightnessctl
+          gammastep
+          wget
+          curl
+          fastfetch
+        ])
+        ++ (with pkgs.lua52Packages; [
+          cjson
+          luautf8
+        ]);
     };
   };
 }
