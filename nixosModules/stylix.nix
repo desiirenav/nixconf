@@ -16,7 +16,7 @@
     cursor = {
       package = pkgs.rose-pine-cursor;
       name = "BreezeX-RosePineDawn-Linux";
-      size = 20;
+      size = 22;
     };
 
     base16Scheme = {

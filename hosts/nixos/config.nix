@@ -13,6 +13,7 @@
     ./../../nixosModules/imper.nix
     ./../../nixosModules/gaming.nix
     ./../../overlays/liga.nix
+    ./../../packages/fonts.nix
   ];
 
   # Bootloader.
@@ -68,8 +69,6 @@
 
   # Bluetooth
   hardware.bluetooth.enable = true;
-
-  environment.variables.NIXOS_OZONE_WL = "1";
 
   # Packages
   environment.systemPackages = with pkgs; [
