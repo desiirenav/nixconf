@@ -77,7 +77,10 @@
         [
           battery
           astal3
+          astal4
           io
+          cava
+          greet
           apps
           bluetooth
           mpris
