@@ -6,8 +6,7 @@
 }: {
   environment.systemPackages = with pkgs; [
     mangohud
-    wineWowPackages.stable
-    wineWowPackages.waylandFull
+    #protonup-qt
   ];
 
   environment.sessionVariables = {
@@ -16,7 +15,6 @@
 
   programs.steam = {
     enable = true;
-    extraCompatPackages = with pkgs; [proton-ge-bin];
     gamescopeSession.enable = true;
   };
 
