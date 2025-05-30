@@ -6,7 +6,6 @@
 }: {
   environment.systemPackages = with pkgs; [
     mangohud
-    #protonup-qt
   ];
 
   environment.sessionVariables = {
@@ -16,6 +15,10 @@
   programs.steam = {
     enable = true;
     gamescopeSession.enable = true;
+    remotePlay.openFirewall = true;
+    localNetworkGameTransfers.openFirewall = true;
+    dedicatedServer.openFirewall = true;
+    extraCompatPackages = with pkgs; [proton-ge-bin];
   };
 
   programs.gamemode.enable = true;
