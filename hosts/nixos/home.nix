@@ -9,11 +9,11 @@
     inputs.impermanence.nixosModules.home-manager.impermanence
     ./../../homeManagerModules/niri/default.nix
     ./../../homeManagerModules/stylix.nix
-    ./../../homeManagerModules/fuzzel.nix
     ./../../homeManagerModules/shell.nix
     ./../../homeManagerModules/ghostty.nix
     ./../../homeManagerModules/nixcord.nix
     ./../../homeManagerModules/browser.nix
+    ./../../homeManagerModules/rofi.nix
   ];
 
   home.username = "narayan";
