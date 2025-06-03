@@ -9,7 +9,6 @@
   colors = config.lib.stylix.colors.withHashtag;
 in {
   programs.niri = {
-    enable = true;
     settings = {
       screenshot-path = "~/Pictures/Screenshots/%Y-%m-%dT%H:%M:%S.png";
       environment = {

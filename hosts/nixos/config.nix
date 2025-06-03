@@ -16,6 +16,8 @@
     ./../../packages/fonts.nix
   ];
 
+  nixpkgs.overlays = [inputs.niri.overlays.niri];
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -67,6 +69,12 @@
   # Flakes
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
+  # Niri
+  programs.niri = {
+    enable = true;
+    package = pkgs.niri-unstable;
+  };
+
   # Bluetooth
   hardware.bluetooth.enable = true;
 
@@ -85,6 +93,11 @@
     librewolf
     lua
     vlc
+    grim
+    slurp
+    wf-recorder
+    wl-clipboard
+    wireplumber
   ];
 
   home-manager = {
