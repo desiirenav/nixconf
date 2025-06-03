@@ -7,13 +7,13 @@
 }: {
   imports = [
     inputs.impermanence.nixosModules.home-manager.impermanence
-    ./../../homeManagerModules/niri/default.nix
-    ./../../homeManagerModules/stylix.nix
-    ./../../homeManagerModules/shell.nix
-    ./../../homeManagerModules/ghostty.nix
-    ./../../homeManagerModules/nixcord.nix
-    ./../../homeManagerModules/browser.nix
-    ./../../homeManagerModules/anyrun.nix
+    ./../modules/home-manager/niri/default.nix
+    ./../modules/home-manager/stylix.nix
+    ./../modules/home-manager/shell.nix
+    ./../modules/home-manager/ghostty.nix
+    ./../modules/home-manager/nixcord.nix
+    ./../modules/home-manager/browser.nix
+    ./../modules/home-manager/anyrun.nix
   ];
 
   home.username = "narayan";

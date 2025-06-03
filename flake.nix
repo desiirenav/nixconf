@@ -45,8 +45,8 @@
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
       modules = [
-        ./hosts/nixos/config.nix
-        (import ./nixosModules/disko.nix {device = "/dev/nvme0n1";})
+        ./nixos/config.nix
+        (import ./modules/nixos/disko.nix {device = "/dev/nvme0n1";})
         inputs.disko.nixosModules.default
         inputs.impermanence.nixosModules.impermanence
         inputs.home-manager.nixosModules.default

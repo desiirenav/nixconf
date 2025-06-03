@@ -6,14 +6,14 @@
 }: {
   imports = [
     (import ./../../nixosModules/disko.nix {device = "/dev/nvme0n1";})
-    ./hardware-configuration.nix
-    ./nvidia.nix
-    ./../../nixosModules/stylix.nix
-    ./../../nixosModules/nvf.nix
-    ./../../nixosModules/imper.nix
-    ./../../nixosModules/gaming.nix
-    ./../../nixosModules/liga.nix
-    ./../../nixosModules/fonts.nix
+    ./hardware.nix
+    ./../../modules/nixos/nvidia.nix
+    ./../../modules/nixos/stylix.nix
+    ./../../modules/nixos/nvf.nix
+    ./../../modules/nixos/imper.nix
+    ./../../modules/nixos/gaming.nix
+    ./../../modules/nixos/fonts.nix
+    ./../../overlays/liga.nix
   ];
 
   nixpkgs.overlays = [inputs.niri.overlays.niri];
@@ -97,7 +97,7 @@
   home-manager = {
     extraSpecialArgs = {inherit inputs;};
     users = {
-      "narayan" = import ./home.nix;
+      "narayan" = import ./../home-manager/home.nix;
     };
   };
 
