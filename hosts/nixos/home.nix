@@ -13,7 +13,7 @@
     ./../../homeManagerModules/ghostty.nix
     ./../../homeManagerModules/nixcord.nix
     ./../../homeManagerModules/browser.nix
-    ./../../homeManagerModules/launcher.nix
+    ./../../homeManagerModules/anyrun.nix
   ];
 
   home.username = "narayan";
