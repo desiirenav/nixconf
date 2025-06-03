@@ -12,8 +12,8 @@
     ./../../nixosModules/nvf.nix
     ./../../nixosModules/imper.nix
     ./../../nixosModules/gaming.nix
-    ./../../overlays/liga.nix
-    ./../../packages/fonts.nix
+    ./../../nixosModules/liga.nix
+    ./../../nixosModules/fonts.nix
   ];
 
   nixpkgs.overlays = [inputs.niri.overlays.niri];

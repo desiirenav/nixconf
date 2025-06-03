@@ -7,12 +7,6 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    astal = {
-      url = "github:aylur/astal";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     disko = {
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -46,7 +40,6 @@
     nixpkgs,
     stylix,
     nvf,
-    astal,
     ...
   } @ inputs: let
     system = "x86_64-linux";
@@ -65,41 +58,5 @@
         inputs.home-manager.nixosModules.default
       ];
     };
-    packages.${system}.astal-bar = astal.lib.mkLuaPackage {
-      inherit pkgs;
-      name = "astal-bar"; # Executable name
-      src = ./astal-bar; # Directory with your init.lua
-      extraPackages = with astal.packages.${system};
-        [
-          battery
-          astal3
-          astal4
-          io
-          cava
-          greet
-          apps
-          bluetooth
-          mpris
-          network
-          notifd
-          powerprofiles
-          tray
-          hyprland
-          wireplumber
-        ]
-        ++ (with pkgs; [
-          dart-sass
-          inotify-tools
-          brightnessctl
-          gammastep
-          wget
-          curl
-          fastfetch
-        ])
-        ++ (with pkgs.lua52Packages; [
-          cjson
-          luautf8
-        ]);
-    };
-  };
+  }
 }
