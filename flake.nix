@@ -2,7 +2,10 @@
   description = "My NixOS setup";
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-
+    anyrun = {
+      url = "github:anyrun-org/anyrun";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -11,14 +14,11 @@
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
     impermanence.url = "github:nix-community/impermanence";
-
     stylix = {
       url = "github:danth/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -32,7 +32,6 @@
       url = "github:shaunsingh/SFMono-Nerd-Font-Ligaturized";
       flake = false;
     };
-
     nvf.url = "github:notashelf/nvf";
   };
   outputs = {
@@ -40,15 +39,10 @@
     nixpkgs,
     stylix,
     nvf,
+    anyrun,
     ...
-  } @ inputs: let
-    system = "x86_64-linux";
-    pkgs = import nixpkgs {
-      inherit system;
-    };
-  in {
+  } @ inputs: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-      inherit system;
       specialArgs = {inherit inputs;};
       modules = [
         ./hosts/nixos/config.nix
