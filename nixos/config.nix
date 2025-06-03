@@ -5,15 +5,15 @@
   ...
 }: {
   imports = [
-    (import ./../../nixosModules/disko.nix {device = "/dev/nvme0n1";})
+    (import ./../modules/nixos/disko.nix {device = "/dev/nvme0n1";})
     ./hardware.nix
-    ./../../modules/nixos/nvidia.nix
-    ./../../modules/nixos/stylix.nix
-    ./../../modules/nixos/nvf.nix
-    ./../../modules/nixos/imper.nix
-    ./../../modules/nixos/gaming.nix
-    ./../../modules/nixos/fonts.nix
-    ./../../overlays/liga.nix
+    ./../modules/nixos/nvidia.nix
+    ./../modules/nixos/stylix.nix
+    ./../modules/nixos/nvf.nix
+    ./../modules/nixos/imper.nix
+    ./../modules/nixos/gaming.nix
+    ./../modules/nixos/fonts.nix
+    ./../overlays/liga.nix
   ];
 
   nixpkgs.overlays = [inputs.niri.overlays.niri];
