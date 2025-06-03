@@ -91,13 +91,7 @@
     ani-cli
     qbittorrent
     librewolf
-    lua
     vlc
-    grim
-    slurp
-    wf-recorder
-    wl-clipboard
-    wireplumber
   ];
 
   home-manager = {
