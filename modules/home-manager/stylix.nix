@@ -8,7 +8,6 @@
     enable = true;
     targets = {
       starship.enable = false;
-      qt.enable = false;
     };
   };
 }
