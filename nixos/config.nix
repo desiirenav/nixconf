@@ -75,6 +75,10 @@
     package = pkgs.niri-unstable;
   };
 
+  # Hyprland
+  programs.hyprland.enable = true;
+  programs.hyprland.package = inputs.hyprland.packages."${pkgs.system}".hyprland;
+
   # Bluetooth
   hardware.bluetooth.enable = true;
 
