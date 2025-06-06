@@ -51,7 +51,6 @@
         inputs.disko.nixosModules.default
         inputs.impermanence.nixosModules.impermanence
         inputs.home-manager.nixosModules.default
-        inputs.nix-flatpak.nixosModules.nix-flatpak
       ];
     };
   };

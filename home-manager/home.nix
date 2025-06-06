@@ -8,7 +8,6 @@
   imports = [
     inputs.impermanence.nixosModules.home-manager.impermanence
     ./../modules/home-manager/niri/default.nix
-    ./../modules/home-manager/flatpak.nix
     ./../modules/home-manager/stylix.nix
     ./../modules/home-manager/shell.nix
     ./../modules/home-manager/ghostty.nix
@@ -41,6 +40,7 @@
       ".config/nushell"
       ".local/share/keyrings"
       ".local/share/direnv"
+      ".local/share/flatpak"
       ".local/share/Steam"
     ];
     files = [

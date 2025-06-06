@@ -45,6 +45,7 @@
     directories = [
       "/etc/nixos"
       "/var/log"
+      "/var/lib/flatpak"
       "/var/lib/bluetooth"
       "/var/lib/nixos"
       "/var/lib/systemd/coredump"
