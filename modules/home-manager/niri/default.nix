@@ -17,5 +17,7 @@
     xwayland-satellite
     brightnessctl
     swaybg
+    dunst
+    nautilus
   ];
 }

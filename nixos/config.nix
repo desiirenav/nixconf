@@ -36,13 +36,16 @@
   # Internationalisation
   i18n.defaultLocale = "en_CA.UTF-8";
 
-  # Configure keymap in X11
+  # Services
   services = {
-    xserver.xkb = {
-      layout = "us";
-      variant = "";
+    xserver = {
+      xkb = {
+        layout = "us";
+        variant = "";
+      };
     };
   };
+
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -72,7 +75,6 @@
   # Niri
   programs.niri = {
     enable = true;
-    package = pkgs.niri-unstable;
   };
 
   # Bluetooth
@@ -90,6 +92,7 @@
     nitch
     ani-cli
     librewolf
+    adwaita-icon-theme
   ];
 
   home-manager = {

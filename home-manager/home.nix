@@ -34,7 +34,6 @@
       "Videos"
       ".ssh"
       ".zen"
-      ".config/heroic"
       "Games"
       ".config/discord"
       ".config/Vencord"

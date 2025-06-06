@@ -38,6 +38,9 @@ in {
         {
           command = ["swaybg" "-m" "fill" "-i" wallpaper];
         }
+        {
+          command = ["dunst"];
+        }
       ];
     };
   };
