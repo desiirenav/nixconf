@@ -8,6 +8,7 @@
     mangohud
     osu-lazer-bin
     qbittorrent
+    heroic
   ];
 
   environment.sessionVariables = {

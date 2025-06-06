@@ -23,6 +23,7 @@
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=v0.6.0";
     niri.url = "github:sodiboo/niri-flake";
     niri-unstable.url = "github:YaLTeR/niri";
     nixcord.url = "github:kaylorben/nixcord";
@@ -50,6 +51,7 @@
         inputs.disko.nixosModules.default
         inputs.impermanence.nixosModules.impermanence
         inputs.home-manager.nixosModules.default
+        inputs.nix-flatpak.nixosModules.nix-flatpak
       ];
     };
   };

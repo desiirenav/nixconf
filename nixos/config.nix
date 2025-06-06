@@ -8,6 +8,7 @@
     (import ./../modules/nixos/disko.nix {device = "/dev/nvme0n1";})
     ./hardware.nix
     ./../modules/nixos/nvidia.nix
+    ./../modules/nixos/flatpak.nix
     ./../modules/nixos/stylix.nix
     ./../modules/nixos/nvf.nix
     ./../modules/nixos/imper.nix

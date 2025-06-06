@@ -35,6 +35,7 @@
       ".ssh"
       ".zen"
       "Games"
+      ".config/heroic"
       ".config/discord"
       ".config/Vencord"
       ".config/nushell"
