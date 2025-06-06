@@ -56,6 +56,8 @@
     jack.enable = true;
   };
 
+  services.flatpak.enable = true;
+
   # User
   users.users.narayan = {
     isNormalUser = true;

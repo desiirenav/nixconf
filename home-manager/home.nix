@@ -8,7 +8,7 @@
   imports = [
     inputs.impermanence.nixosModules.home-manager.impermanence
     ./../modules/home-manager/niri/default.nix
-    #./../modules/home-manager/hyprland.nix
+    ./../modules/home-manager/flatpak.nix
     ./../modules/home-manager/stylix.nix
     ./../modules/home-manager/shell.nix
     ./../modules/home-manager/ghostty.nix
